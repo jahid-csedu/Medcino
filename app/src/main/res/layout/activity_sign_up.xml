@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jahid.medcino.SignUpActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pharmacyNameEditText"
+                android:hint="@string/pharmacy_name"
+                android:layout_marginTop="46dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/ownerNameEditText"
+                android:hint="@string/owner_name"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/addressEditText"
+                android:hint="@string/address"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registrationEditText"
+                android:hint="@string/registration"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:gravity="center"
+                android:hint="@string/login_phone"
+                android:ems="10"
+                android:id="@+id/phoneNumberEditText"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/passwordEditText"
+                android:hint="@string/login_pass"
+                android:background="@drawable/border"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup"
+                android:textSize="20sp"
+                android:textColor="#70AD47"
+                android:layout_gravity="center"
+                android:id="@+id/signupButton"
+                android:layout_marginTop="42dp"
+                android:onClick="signUp"
+                android:background="@drawable/border"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
